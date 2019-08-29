@@ -13,7 +13,8 @@ var gulp 			= require('gulp'),
     imgMin 			= require('gulp-imagemin'),
     cssMin 			= require('gulp-clean-css'),
     preFixer	 	= require('gulp-autoprefixer'),
-    postcss     = require("gulp-postcss");
+    plumber     = require("gulp-plumber"),
+postcss     = require("gulp-postcss");
 
 var path = {
 
@@ -73,6 +74,7 @@ gulp.task('php:build', function(){
 
 gulp.task('style:build', function(){
     gulp.src(path.src.style)
+      .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
       .pipe(preFixer({
