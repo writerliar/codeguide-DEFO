@@ -1,7 +1,7 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
-    "indentation": 2,
+    "indentation": "tab",
     "string-quotes": "double",
     "no-duplicate-selectors": true,
     "color-hex-case": "lower",
