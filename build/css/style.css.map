@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAsB,EAAA;;AAExB;EACE,iBAAiB,EAAA;;AAGnB;EAAQ,WAAY,EAAA;;AAEpB;EACE,eAAe,EAAA","file":"style.css","sourcesContent":[".test {\n  font-family:sans-serif;\n}\n.test{\n  font-weight: bold;\n}\n\n.test { color: blue }\n\nh1 {\n  font-size: 30px;\n}\n"]}

@@ -13,7 +13,7 @@ var gulp 			= require('gulp'),
     imgMin 			= require('gulp-imagemin'),
     cssMin 			= require('gulp-clean-css'),
     preFixer	 	= require('gulp-autoprefixer'),
-    plumber     = require("gulp-plumber"),
+  reload = sync.reload,
 postcss     = require("gulp-postcss");
 
 var path = {
