@@ -77,6 +77,12 @@ button {
 	margin: 0 auto;
 }
 
+.page-title {
+	text-transform: uppercase;
+	margin: 24px 0;
+	font-size: 3rem;
+}
+
 .content {
 	display: flex;
 	align-items: flex-start;
@@ -88,6 +94,63 @@ button {
 
 .menu {
 	flex-basis: 30%;
+}
+
+//========КОДГАЙД=======
+
+.slide {
+	background-color: $grey;
+	padding: 24px;
+	margin: 0 0 24px 0;
+
+	.slide__title {
+		font-size: 1.8rem;
+	}
+
+	.slide__list {
+		margin: 0;
+		list-style: none;
+	}
+
+	.slide__wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding: 24px;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 28px;
+			right: 0;
+			bottom: auto;
+			width: 10px;
+			height: 10px;
+			background-color: $red;
+			border-radius: 50px;
+		}
+
+		.slide__rules {
+			flex-basis: 60%;
+		}
+
+		.slide__example {
+			flex-basis: 30%;
+			padding: 16px;
+			border: 1px solid $black;
+			border-radius: 5px;
+			background-color: $white;
+		}
+
+		.slide__bad b {
+			color: $red;
+		}
+
+		.slide__good b {
+			color: $green;
+		}
+	}
 }
 
 @import "partials/media";
