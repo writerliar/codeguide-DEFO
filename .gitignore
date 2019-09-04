@@ -4,3 +4,7 @@ node_modules/
 npm-debug.*
 Thumbs.db
 bower/
+build/css/libs.css.map
+build/css/style.css.map
+build/css/libs.css-min.map
+build/css/style.css-min.map
