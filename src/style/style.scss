@@ -116,6 +116,20 @@ button {
 		display: flex;
 		justify-content: space-between;
 		padding: 24px;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 28px;
+			right: 0;
+			bottom: auto;
+			width: 10px;
+			height: 10px;
+			background-color: $red;
+			border-radius: 50px;
+		}
 
 		.slide__rules {
 			flex-basis: 60%;
@@ -123,9 +137,10 @@ button {
 
 		.slide__example {
 			flex-basis: 30%;
+			padding: 16px;
 			border: 1px solid $black;
 			border-radius: 5px;
-			padding: 16px;
+			background-color: $white;
 		}
 
 		.slide__bad b {
