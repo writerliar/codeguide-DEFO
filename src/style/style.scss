@@ -1,5 +1,6 @@
 @import "partials/fonts";
 @import "partials/settings";
+@import "partials/media";
 
 // Main
 
@@ -16,23 +17,15 @@ html,
 body {
 	margin: 0;
 	width: 100%;
-	overflow-x: hidden;
 }
 
 body {
 	//font-family: $opensans;
 	position: relative;
-	line-height: 1;
+	line-height: 1.2;
 	font-size: 16px;
 	font-weight: 400;
 	//color: $black;
-}
-
-ol,
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
 }
 
 h1,
@@ -63,6 +56,11 @@ p {
 	padding: 0;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 input,
 textarea,
 button {
@@ -74,11 +72,3 @@ button {
 		outline: none;
 	}
 }
-
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-@import "partials/media";
