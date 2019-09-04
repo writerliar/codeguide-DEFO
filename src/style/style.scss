@@ -179,4 +179,33 @@ button {
 	}
 }
 
+//======ЦВЕТА========
+
+.colors {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		flex-basis: 20%;
+		margin-bottom: 24px;
+	}
+
+	&__bg {
+		height: 70px;
+		width: 100%;
+
+		&.red {
+			background-color: $red;
+		}
+
+		&.black {
+			background-color: $black;
+		}
+	}
+
+	&__name {
+		display: block;
+	}
+}
+
 @import "partials/media";
