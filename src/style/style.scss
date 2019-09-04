@@ -170,12 +170,28 @@ button {
 		background-color: $white;
 	}
 
-	&__bad b {
-		color: $red;
-	}
+	&__code {
+		//значение 300 примерное
+		margin: 10px 0;
+		max-width: 300px;
 
-	&__good b {
-		color: $green;
+		& b,
+		& code {
+			display: block;
+		}
+
+		& code {
+			margin-bottom: 10px;
+			white-space: pre-wrap;
+		}
+
+		&--bad b {
+			color: $red;
+		}
+
+		&--good b {
+			color: $green;
+		}
 	}
 }
 
