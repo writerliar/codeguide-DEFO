@@ -40,6 +40,10 @@ p {
   margin: 0;
   padding: 0; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 input,
 textarea,
 button {
@@ -50,25 +54,5 @@ button {
   textarea:focus,
   button:focus {
     outline: none; }
-
-.container {
-  max-width: 1500px;
-  margin: 0 auto; }
-
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start; }
-
-.main-content {
-  -ms-flex-preferred-size: 70%;
-  flex-basis: 70%; }
-
-.menu {
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 30%; }
 
 /*# sourceMappingURL=style.css.map */
