@@ -17,27 +17,16 @@ html,
 body {
 	margin: 0;
 	width: 100%;
-	//не самое лучшее решение, предлагаю его убрать
-	overflow-x: hidden;
 }
 
 body {
 	//font-family: $opensans;
 	position: relative;
-	//1 маловато, текст слипается. предлагаю 1.2
-	line-height: 1;
+	line-height: 1.2;
 	font-size: 16px;
 	font-weight: 400;
 	//color: $black;
 }
-
-//это мы уже обсудили :)
-//ol,
-//ul {
-//	list-style: none;
-//	padding: 0;
-//	margin: 0;
-//}
 
 h1,
 h2,
@@ -57,7 +46,6 @@ a {
 	&:hover,
 	&:focus {
 		text-decoration: none;
-		//outline лучше не убирать. или, если избавляется от outline, то необходимо прописать состояние :focus, чтобы при работе с клавиатуры было понятно, где находится курсор
 		outline: none;
 		color: inherit;
 	}
@@ -81,14 +69,6 @@ button {
 	resize: none;
 
 	&:focus {
-		//тоже самое
 		outline: none;
 	}
-}
-
-.clearfix:after {
-	//обычно используется при float. предлагаю убрать, чтобы не возникало путанницы
-	content: "";
-	display: table;
-	clear: both;
 }
