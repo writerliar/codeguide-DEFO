@@ -8,20 +8,13 @@
 html,
 body {
   margin: 0;
-  width: 100%;
-  overflow-x: hidden; }
+  width: 100%; }
 
 body {
   position: relative;
-  line-height: 1;
+  line-height: 1.2;
   font-size: 16px;
   font-weight: 400; }
-
-ol,
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
 
 h1,
 h2,
@@ -46,6 +39,10 @@ p {
   margin: 0;
   padding: 0; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 input,
 textarea,
 button {
@@ -56,10 +53,5 @@ button {
   textarea:focus,
   button:focus {
     outline: none; }
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
 
 /*# sourceMappingURL=style.css.map */

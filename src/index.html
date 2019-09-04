@@ -1,119 +1,647 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/libs.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Библиотека компонентов ДЭФО</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Библиотека компонентов ДЭФО</title>
 </head>
 <body>
 <header class="page-header">
-  <a href="https://defo.ru" class="page-header__logo"><img src="img/logo.svg" alt="Логотип комапнии ДЭФО" width="100" height="100"></a>
+	<a href="https://defo.ru" class="page-header__logo"><img src="img/logo.svg" alt="Логотип комапнии ДЭФО" width="100" height="100"></a>
 </header>
 <main>
-  <h1>Кодгайд</h1>
-  <div class="container">
-    <div class="main-content">
-      <section class="slide">
-        <h2 class="slide__title">HTML</h2>
-        <div class="slide__wrapper">
-          <div class="slide__rules">
-            <p class="slide__text">
-              У одиночных тегов необязательные закрывающие теги не ставятся
-            </p>
-          </div>
-          <div class="slide__example">
-            <p class="slide__bad">
-              <b>Плохо:</b>
-              <code>
-                &lt;br /&gt;
-                &lt;img /&gt;
-              </code>
-            </p>
-            <p class="slide__good">
-              <b>Хорошо:</b>
-              <code>
-                &lt;br&gt;
-                &lt;img&gt;
-              </code>
-            </p>
-          </div>
-        </div>
-        <div class="slide__wrapper">
-          <div class="slide__rules">
-            <p class="slide__text">
-              Разметка должна быть семантичной
-            </p>
-          </div>
-          <div class="slide__example">
+	<h1>Кодгайд</h1>
+	<div class="container">
+		<div class="main-content">
+			<section class="slide">
+				<h2 class="slide__title">HTML</h2>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Общие правила прописаны в editorconfig. Для соблюдения единообразия и правил необходимо
+							установить плагин в свой редактор.
+						</p>
+					</div>
+					<div class="slide__example">
 
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <h2 class="slide__title">Картинки</h2>
-        <div class="slide__wrapper">
-          <div class="slide__rules">
-            <p class="slide__text">
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							У одиночных тегов необязательные закрывающие теги не ставятся
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__bad">
+							<b>Плохо:</b>
+							<code>
+								&lt;br /&gt;
+								&lt;img /&gt;
+							</code>
+						</p>
+						<p class="slide__good">
+							<b>Хорошо:</b>
+							<code>
+								&lt;br&gt;
+								&lt;img&gt;
+							</code>
+						</p>
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Разметка должна быть семантичной
+						</p>
+					</div>
+					<div class="slide__example">
 
-            </p>
-          </div>
-          <div class="slide__example">
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Интерактивные элементы размечаются &lt;a&gt; или &lt;button&gt;.
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__bad">
+							<b>Плохо:</b>
+							<code>
+								&lt;span&gt;Нажмите сюда&lt;/span&gt;
+							</code>
+						</p>
+						<p class="slide__good">
+							<b>Хорошо:</b>
+							<code>
+								&lt;a&gt;Нажмите сюда&lt;/a&gt;
+								&lt;button&gt;Нажмите сюда&lt;/button&gt;
+							</code>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="slide">
+				<h2 class="slide__title">Картинки</h2>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							У всех картинок явно задаются ширина и размер
+						</p>
+					</div>
+					<div class="slide__example">
 
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <h2 class="slide__title">CSS</h2>
-        <div class="slide__wrapper">
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Все иконки должны быть в svg
+						</p>
+					</div>
+					<div class="slide__example">
 
-        </div>
-      </section>
-      <section class="slide">
-        <h2 class="slide__title">JS</h2>
-        <div class="slide__wrapper">
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Контентные svg должны быть заинлайнены в html через спрайт
+						</p>
+					</div>
+					<div class="slide__example">
 
-        </div>
-      </section>
-      <section class="slide">
-        <h2 class="slide__title">Общие правила</h2>
-        <div class="slide__wrapper">
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							У заинлайненых svg должны быть прописаны ширина и высота
+						</p>
+					</div>
+					<div class="slide__example">
 
-        </div>
-      </section>
-      <section class="slide">
-        <h2 class="slide__title">Некоторые уточнения для работы с гитом</h2>
-        <div class="slide__wrapper">
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Неконтентные svg задаются фоном через css, либо контентом через псевдоэлемент.
+						</p>
+					</div>
+					<div class="slide__example">
 
-        </div>
-      </section>
-    </div>
-    <aside class="menu">
-      <nav class="menu__navigation">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="" class="menu__link">Библиотека цветов</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">Библиотека текстовых элементов</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">Библиотека кнопок и интерактивных элементов</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">Иконки</a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-  </div>
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Как отличить контентные svg от неконтентных: контентные меняются при взаимодействии:
+							меняется цвет, размер и т.д. Если меняется только прозрачность, смотреть по ситуации.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+			</section>
+			<section class="slide">
+				<h2 class="slide__title">CSS</h2>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Сетки и микросетки размечаются флексбоксами
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Именование классов происходит по методологии БЭМ в международной нотации:
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__good">
+							<code>
+								.block
+								.block__element
+								.block--modifier
+								.block__element--modifier
+							</code>
+						</p>
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Используется ccs-препроцессор Sass
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Для соблюдения правил и единообразия кода в проекте присутствует файл .stylelintrc.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Вложенности селекторов не больше двух. Псевдоэлементы, псевдоклассы, а также такие
+							селектора, как .class__name + .class__name-two вложенности не добавляют
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__bad">
+							<b>Плохо:</b>
+							<code>
+								.class ul li a {}
+							</code>
+						</p>
+						<p class="slide__good">
+							<b>Хорошо:</b>
+							<code>
+								.class a {}
+							</code>
+						</p>
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							При работе с файлами препроцессоров разрешается вложенность модификаторов блока, но не
+							элементов
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__bad">
+							<b>Плохо:</b>
+							<code>
+								.block {
+								&__element {
+								...
+								}
+								}
+							</code>
+						</p>
+						<p class="slide__good">
+							<b>Хорошо:</b>
+							<code>
+								.block {
+								&--modifier {
+								...
+								}
+								}
+
+								.block__element {
+								&--modifier {
+								...
+								}
+								}
+							</code>
+						</p>
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Через id стилизация запрещена
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Запрещено использовать !important для того, чтобы "перебить" более старые классы.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Стилизация элементов происходит по имени класса, а не по имени тега.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Глобальные стили запрещены.
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__bad">
+							<b>Плохо:</b>
+							<code>
+								ul {
+								list-style: none;
+								}
+							</code>
+						</p>
+						<p class="slide__good">
+							<b>Исключения:</b>
+							<code>
+								a {
+								text-decoration: none;
+								}
+
+								img {
+								max-width: 100%;
+								height: auto;
+								}
+
+								body {}
+							</code>
+						</p>
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Цвет задается шестнадцатеричным значением без сокращений.
+							При необходимости прозрачности использовать rgba().
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Транслит при наименовании классов не используется
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Имена классов должны явно говорить, к чему они принадлежат
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							С осторожностью использовать имена классов для цветов, чтобы в будущем не оказаться в
+							подобной ситуации:
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__bad">
+							<b>Плохо:</b>
+							<code>
+								.red-btn {
+								background-color: green;
+								}
+							</code>
+						</p>
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Не использовать сокращенный синтаксис свойств
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__bad">
+							<b>Плохо:</b>
+							<code>
+								background: green;
+							</code>
+						</p>
+						<p class="slide__good">
+							<b>Плохо:</b>
+							<code>
+								background-color: green;
+							</code>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="slide">
+				<h2 class="slide__title">JS</h2>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							В случае необходимости отключить работу элемента по умолчанию, необходимо использовать
+							preventDefault.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Используются одинарные кавычки. В случае вложенности разрешенно комбинировать олдинарные
+							кавычки с двойными.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Для именования переменных и id для js используется стиль camelCase.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Классам, которые прописываются только для js, необходимо добавлять префикс js-
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Для классов, которые срабатывают в случае отключенного js, необходимо приписывать префикс
+							no-js-
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Имена переменных должны явно говорить о том, для чего они.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+			</section>
+			<section class="slide">
+				<h2 class="slide__title">Шрифты</h2>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Иконочные шрифты использовтать запрещено. Если возможно, делаем элемент на css, если нет,
+							необходимо реализовать иконку в svg.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+			</section>
+			<section class="slide">
+				<h2 class="slide__title">Доступность</h2>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Всему тексту всегда задается контрастный фон для удобочитаемости.
+						</p>
+						<p class="slide__text">
+							В случае фона-картинки необходимо задавать страховочный фон.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Все интерактивные элементы должны быть доступны с клавиатуры и прокликиваться табом.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Все состояния вешаются на интерактивный элемент, а не на его обертку.
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__bad">
+							<b>Плохо:</b>
+							<code>
+								li:hover {
+								background: green;
+								}
+
+								li:hover a {
+								background: green;
+								}
+
+							</code>
+						</p>
+						<p class="slide__good">
+							<b>Хорошо:</b>
+							<code>
+								li a:hover {
+								background: green;
+								}
+							</code>
+						</p>
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Если в стайлгайде не прописано состояние для :focus, дублируем в него hover.
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__good">
+							<b>Хорошо:</b>
+							<code>
+								a:hover,
+								a:focus {...}
+							</code>
+						</p>
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Все элементы, которые не имеют текстового описания, необходимо подстраховывать. Например, с
+							помощью специального класса visually-hidden.
+						</p>
+					</div>
+					<div class="slide__example">
+						<p class="slide__good">
+							<b>Хорошо:</b>
+							<code>
+								&lt;a href="index.html"&gt;&lt;svg&gt;иконка вк&lt;/svg&gt;&lt;svg
+								class="visually-hidden"&gt;Мы Вконтакте&lt;/span&gt;&lt;/a&gt;
+							</code>
+						</p>
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							У всех картинок прописан alt, который явно описывает, что изображено на картинке. Если на
+							картинке изображена карта - пищем конечный адрес.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+			</section>
+			<section class="slide">
+				<h2 class="slide__title">Общие правила</h2>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Адаптивная верстка происходит по методу mobile first.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Используется прогрессивное улучшение. Это значит, что при неработающем js все элементы
+							по-прежнему работают, и пользователь может получить всю необходимую ему информацию даже при
+							медленном интернете.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Верстка должна проходить тест переполнения контентом.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+			</section>
+			<section class="slide">
+				<h2 class="slide__title">Некоторые уточнения для работы с гитом</h2>
+				<div class="slide__wrapper">
+					<div class="slide__rules">
+						<p class="slide__text">
+							Каждая задача решается в своей ветке, после чего делается pull request в мастер-репозиорий.
+						</p>
+					</div>
+					<div class="slide__example">
+
+					</div>
+				</div>
+			</section>
+		</div>
+		<aside class="menu">
+			<nav class="menu__navigation">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="" class="menu__link">Библиотека цветов</a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="menu__link">Библиотека текстовых элементов</a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="menu__link">Библиотека кнопок и интерактивных элементов</a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="menu__link">Иконки</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+	</div>
 </main>
 <footer class="page-footer">
-  <p class="copyright">
-    &#169; Дэфо, 2019
-  </p>
+	<p class="copyright">
+		&#169; Дэфо, 2019
+	</p>
 </footer>
 <script src="js/jquery.js"></script>
 <script src="js/libs.js"></script>
