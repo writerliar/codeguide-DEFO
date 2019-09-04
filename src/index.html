@@ -86,70 +86,25 @@
 								</p>
 							</div>
 						</li>
-					</ul>
-				</section>
-				<section class="slide">
-					<h2 class="slide__title">Картинки</h2>
-					<ul class="slide__list">
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									У всех картинок явно задаются ширина и размер
+									Транслит при наименовании классов не используется.
 								</p>
 							</div>
 							<div class="slide__example">
-
-							</div>
-						</li>
-						<li class="slide__wrapper">
-							<div class="slide__rules">
-								<p class="slide__text">
-									Все иконки должны быть в svg
+								<p class="slide__bad">
+									<b>Плохо:</b>
+									<code>
+										&lt;div class="novosti"&gt;&lt;/div&gt;
+									</code>
 								</p>
-							</div>
-							<div class="slide__example">
-
-							</div>
-						</li>
-						<li class="slide__wrapper">
-							<div class="slide__rules">
-								<p class="slide__text">
-									Контентные svg должны быть заинлайнены в html через спрайт
+								<p class="slide__good">
+									<b>Хорошо:</b>
+									<code>
+										&lt;div class="news"&gt;&lt;/div&gt;
+									</code>
 								</p>
-							</div>
-							<div class="slide__example">
-
-							</div>
-						</li>
-						<li class="slide__wrapper">
-							<div class="slide__rules">
-								<p class="slide__text">
-									У заинлайненых svg должны быть прописаны ширина и высота
-								</p>
-							</div>
-							<div class="slide__example">
-
-							</div>
-						</li>
-						<li class="slide__wrapper">
-							<div class="slide__rules">
-								<p class="slide__text">
-									Неконтентные svg задаются фоном через css, либо контентом через псевдоэлемент.
-								</p>
-							</div>
-							<div class="slide__example">
-
-							</div>
-						</li>
-						<li class="slide__wrapper">
-							<div class="slide__rules">
-								<p class="slide__text">
-									Как отличить контентные svg от неконтентных: контентные меняются при взаимодействии:
-									меняется цвет, размер и т.д. Если меняется только прозрачность, смотреть по ситуации.
-								</p>
-							</div>
-							<div class="slide__example">
-
 							</div>
 						</li>
 					</ul>
@@ -160,11 +115,8 @@
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Сетки и микросетки размечаются флексбоксами
+									Сетки и микросетки размечаются флексбоксами.
 								</p>
-							</div>
-							<div class="slide__example">
-
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -187,41 +139,35 @@
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Используется ccs-препроцессор Sass
+									Используется ccs-препроцессор Sass.
 								</p>
-							</div>
-							<div class="slide__example">
-
 							</div>
 						</li>
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Для соблюдения правил и единообразия кода в проекте присутствует файл .stylelintrc.
+									Для соблюдения правил и единообразия кода в проекте присутствует stylelintrc.
 								</p>
-							</div>
-							<div class="slide__example">
-
 							</div>
 						</li>
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Вложенности селекторов не больше двух. Псевдоэлементы, псевдоклассы, а также такие
-									селектора, как .class__name + .class__name-two вложенности не добавляют
+									Вложенность селекторов не больше трех. Псевдоэлементы, псевдоклассы, а также такие
+									селектора, как .class__name + .class__name-two вложенности не добавляют.
 								</p>
 							</div>
 							<div class="slide__example">
 								<p class="slide__bad">
 									<b>Плохо:</b>
 									<code>
-										.class ul li a {}
+										.class ul li a {...}
 									</code>
 								</p>
 								<p class="slide__good">
 									<b>Хорошо:</b>
 									<code>
-										.class a {}
+										.class a {...}
 									</code>
 								</p>
 							</div>
@@ -229,47 +175,22 @@
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									При работе с файлами препроцессоров разрешается вложенность модификаторов блока, но не
-									элементов
+									Через id стилизация запрещена.
 								</p>
 							</div>
 							<div class="slide__example">
 								<p class="slide__bad">
 									<b>Плохо:</b>
 									<code>
-										.block {
-										&__element {
-										...
-										}
-										}
+										#class__name {...}
 									</code>
 								</p>
 								<p class="slide__good">
 									<b>Хорошо:</b>
 									<code>
-										.block {
-										&--modifier {
-										...
-										}
-										}
-
-										.block__element {
-										&--modifier {
-										...
-										}
-										}
+										.class__name {...}
 									</code>
 								</p>
-							</div>
-						</li>
-						<li class="slide__wrapper">
-							<div class="slide__rules">
-								<p class="slide__text">
-									Через id стилизация запрещена
-								</p>
-							</div>
-							<div class="slide__example">
-
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -278,18 +199,12 @@
 									Запрещено использовать !important для того, чтобы "перебить" более старые классы.
 								</p>
 							</div>
-							<div class="slide__example">
-
-							</div>
 						</li>
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Стилизация элементов происходит по имени класса, а не по имени тега.
+									Стилизация элементов происходит по имени класса, а не тегу.
 								</p>
-							</div>
-							<div class="slide__example">
-
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -303,7 +218,7 @@
 									<b>Плохо:</b>
 									<code>
 										ul {
-										list-style: none;
+											list-style: none;
 										}
 									</code>
 								</p>
@@ -311,15 +226,15 @@
 									<b>Исключения:</b>
 									<code>
 										a {
-										text-decoration: none;
+											text-decoration: none;
 										}
 
 										img {
-										max-width: 100%;
-										height: auto;
+											max-width: 100%;
+											height: auto;
 										}
 
-										body {}
+										body {...}
 									</code>
 								</p>
 							</div>
@@ -332,27 +247,26 @@
 								</p>
 							</div>
 							<div class="slide__example">
-
-							</div>
-						</li>
-						<li class="slide__wrapper">
-							<div class="slide__rules">
-								<p class="slide__text">
-									Транслит при наименовании классов не используется
+								<p class="slide__bad">
+									<b>Плохо:</b>
+									<code>
+										.class__name {
+											color: #fff;
+											background-color: rgb(255, 255, 255);
+											border-color: white;
+										}
+									</code>
 								</p>
-							</div>
-							<div class="slide__example">
-
-							</div>
-						</li>
-						<li class="slide__wrapper">
-							<div class="slide__rules">
-								<p class="slide__text">
-									Имена классов должны явно говорить, к чему они принадлежат
+								<p class="slide__good">
+									<b>Хорошо:</b>
+									<code>
+										.class__name {
+										color: #ffffff;
+										background-color: rgba(255, 255, 255, 0.5);
+										border-color: #ffffff;
+										}
+									</code>
 								</p>
-							</div>
-							<div class="slide__example">
-
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -367,7 +281,7 @@
 									<b>Плохо:</b>
 									<code>
 										.red-btn {
-										background-color: green;
+											background-color: green;
 										}
 									</code>
 								</p>
@@ -376,7 +290,7 @@
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Не использовать сокращенный синтаксис свойств
+									Не использовать сокращенный синтаксис свойств.
 								</p>
 							</div>
 							<div class="slide__example">
@@ -397,6 +311,128 @@
 					</ul>
 				</section>
 				<section class="slide">
+					<h2 class="slide__title">Картинки</h2>
+					<ul class="slide__list">
+						<li class="slide__wrapper">
+							<div class="slide__rules">
+								<p class="slide__text">
+									У всех картинок явно задаются ширина и размер
+								</p>
+							</div>
+							<div class="slide__example">
+								<p class="slide__bad">
+									<b>Плохо:</b>
+									<code>
+
+									</code>
+								</p>
+								<p class="slide__good">
+									<b>Хорошо:</b>
+									<code>
+
+									</code>
+								</p>
+							</div>
+						</li>
+						<li class="slide__wrapper">
+							<div class="slide__rules">
+								<p class="slide__text">
+									Все иконки должны быть в svg
+								</p>
+							</div>
+							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
+
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
+							</div>
+						</li>
+						<li class="slide__wrapper">
+							<div class="slide__rules">
+								<p class="slide__text">
+									Контентные svg должны быть заинлайнены в html через спрайт
+								</p>
+							</div>
+							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
+
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
+							</div>
+						</li>
+						<li class="slide__wrapper">
+							<div class="slide__rules">
+								<p class="slide__text">
+									У заинлайненых svg должны быть прописаны ширина и высота
+								</p>
+							</div>
+							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
+
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
+							</div>
+						</li>
+						<li class="slide__wrapper">
+							<div class="slide__rules">
+								<p class="slide__text">
+									Неконтентные svg задаются фоном через css, либо контентом через псевдоэлемент.
+								</p>
+							</div>
+							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
+
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
+							</div>
+						</li>
+						<li class="slide__wrapper">
+							<div class="slide__rules">
+								<p class="slide__text">
+									Как отличить контентные svg от неконтентных: контентные меняются при взаимодействии:
+									меняется цвет, размер и т.д. Если меняется только прозрачность, смотреть по ситуации.
+								</p>
+							</div>
+							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
+
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="slide">
 					<h2 class="slide__title">JS</h2>
 					<ul class="slide__list">
 						<li class="slide__wrapper">
@@ -407,7 +443,16 @@
 								</p>
 							</div>
 							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
 
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -418,7 +463,16 @@
 								</p>
 							</div>
 							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
 
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -428,7 +482,16 @@
 								</p>
 							</div>
 							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
 
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -438,7 +501,16 @@
 								</p>
 							</div>
 							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
 
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -449,7 +521,16 @@
 								</p>
 							</div>
 							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
 
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -459,7 +540,16 @@
 								</p>
 							</div>
 							<div class="slide__example">
+								<p class="slide__bad">
+									<code>
 
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+
+									</code>
+								</p>
 							</div>
 						</li>
 					</ul>
@@ -473,9 +563,6 @@
 									Иконочные шрифты использовтать запрещено. Если возможно, делаем элемент на css, если нет,
 									необходимо реализовать иконку в svg.
 								</p>
-							</div>
-							<div class="slide__example">
-
 							</div>
 						</li>
 					</ul>
@@ -493,7 +580,16 @@
 								</p>
 							</div>
 							<div class="slide__example">
-
+								<p class="slide__bad">
+									<b>Плохо:</b>
+									<img src="" alt="Задан неконтрастый фон: читать неудобно">
+									<img src="" alt="Картинка не загрузилвась и белый текст пропал на белом фоне">
+								</p>
+								<p class="slide__good">
+									<b>Хорошо:</b>
+									<img src="" alt="Фон контрастный">
+									<img src="" alt="Картинка не загрузилась, но страховочный фон помог ничего не сломать">
+								</p>
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -501,9 +597,6 @@
 								<p class="slide__text">
 									Все интерактивные элементы должны быть доступны с клавиатуры и прокликиваться табом.
 								</p>
-							</div>
-							<div class="slide__example">
-
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -577,7 +670,17 @@
 								</p>
 							</div>
 							<div class="slide__example">
-
+								<p class="slide__bad">
+									<code>
+										&lt;img src="image/map.jpeg"&gt;
+										&lt;img src="image/map.jpeg" alt="карта"&gt;
+									</code>
+								</p>
+								<p class="slide__good">
+									<code>
+										&lt;img src="image/map.jpeg" alt="Мы находимся по адресу: ..."&gt;
+									</code>
+								</p>
 							</div>
 						</li>
 					</ul>
@@ -591,9 +694,6 @@
 									Адаптивная верстка происходит по методу mobile first.
 								</p>
 							</div>
-							<div class="slide__example">
-
-							</div>
 						</li>
 						<li class="slide__wrapper">
 							<div class="slide__rules">
@@ -604,17 +704,34 @@
 								</p>
 							</div>
 							<div class="slide__example">
-
+								<p class="slide__good">
+									Кнопка, вызывающая попап, при выключенном js должна вести на подобную страницу.
+								</p>
+								<p class="slide__good">
+									Бургер-меню при выключенном js есть в потоке.
+								</p>
+								<p class="slide__good">
+									При выключенной интерактивной карте всегда есть страховочная картинка-подложка с адресом.
+								</p>
 							</div>
 						</li>
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Верстка должна проходить тест переполнения контентом.
+									Верстка должна проходить тест на переполнение.
 								</p>
 							</div>
 							<div class="slide__example">
-
+								<p class="slide__bad">
+									<b>Плохо:</b>
+									<img src="" alt="Тест переполнения контентом не пройден: контент выпадает">
+									<img src="" alt="Тест переполнения блоками не пройден: блоки выпадают">
+								</p>
+								<p class="slide__good">
+									<b>Хорошо:</b>
+									<img src="" alt="Тест переполнения контентом пройден: контент растягивает родительский блок">
+									<img src="" alt="Тест переполнения блоками пройден: блоки переносятся, тем самым не ломая сайт">
+								</p>
 							</div>
 						</li>
 					</ul>
@@ -627,9 +744,6 @@
 								<p class="slide__text">
 									Каждая задача решается в своей ветке, после чего делается pull request в мастер-репозиорий.
 								</p>
-							</div>
-							<div class="slide__example">
-
 							</div>
 						</li>
 					</ul>
