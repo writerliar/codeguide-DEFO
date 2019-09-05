@@ -160,10 +160,13 @@ button {
 
 	&__rules {
 		flex-basis: 60%;
+		flex-grow: 1;
 	}
 
 	&__example {
-		flex-basis: 30%;
+		flex-basis: 40%;
+		width: 400px;
+		margin-left: 30px;
 		padding: 16px;
 		border: 1px solid $black;
 		border-radius: 5px;
@@ -173,7 +176,7 @@ button {
 	&__code {
 		//значение 300 примерное
 		margin: 10px 0;
-		max-width: 300px;
+		//width: 400px;
 
 		b,
 		code {

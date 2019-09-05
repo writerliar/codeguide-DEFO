@@ -272,77 +272,65 @@
 								<p class="slide__text">
 									У всех картинок явно задаются ширина и высота.
 								</p>
+								<p class="slide__text">
+									Если используется тег picture, то у основной картинки допускается размеры не указывать.
+								</p>
+							</div>
+							<div class="slide__example">
+								<figure class="slide__code slide__code--bad">
+									<b>Плохо:</b>
+									<pre><code>&lt;img src="image/image.jpeg"&gt;</code></pre>
+								</figure>
+								<figure class="slide__code slide__code--good">
+									<b>Хорошо:</b>
+									<pre><code>&lt;img src="image/image.jpeg" width="400" height="300"&gt;</code></pre>
+									<pre><code>
+										&lt;picture&gt;
+											&lt;source&gt;...&lt;/source&gt;
+											&lt;img src="image/image.jpeg"&gt;
+										&lt;/picture&gt;</code></pre>
+								</figure>
+							</div>
+						</li>
+						<li class="slide__wrapper">
+							<div class="slide__rules">
+								<p class="slide__text">
+									Все иконки должны быть в svg.
+								</p>
+							</div>
+						</li>
+						<li class="slide__wrapper">
+							<div class="slide__rules">
+								<p class="slide__text">
+									Контентные svg должны быть заинлайнены в html через спрайт.
+								</p>
 							</div>
 							<div class="slide__example">
 								<p class="slide__code slide__code--bad">
 									<b>Плохо:</b>
-									<code>
-
-									</code>
+									<img src="" alt="svg заинлайнена в разметку, что засоряет код">
 								</p>
 								<p class="slide__code slide__code--good">
 									<b>Хорошо:</b>
-									<code>
-
-									</code>
+									<img src="" alt="svg берется из спрайта, код остается чистым, иконки подгружаются автоматически">
 								</p>
 							</div>
 						</li>
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Все иконки должны быть в svg
+									У заинлайненых svg должны быть прописаны ширина и высота.
 								</p>
 							</div>
 							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
-								</p>
-							</div>
-						</li>
-						<li class="slide__wrapper">
-							<div class="slide__rules">
-								<p class="slide__text">
-									Контентные svg должны быть заинлайнены в html через спрайт
-								</p>
-							</div>
-							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
-								</p>
-							</div>
-						</li>
-						<li class="slide__wrapper">
-							<div class="slide__rules">
-								<p class="slide__text">
-									У заинлайненых svg должны быть прописаны ширина и высота
-								</p>
-							</div>
-							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
-								</p>
+								<figure class="slide__code slide__code--bad">
+									<b>Плохо:</b>
+									<pre><code>&lt;svg&gt;...&lt;/svg&gt;</code></pre>
+								</figure>
+								<figure class="slide__code slide__code--good">
+									<b>Хорошо:</b>
+									<pre><code>&lt;svg width="10" height="10"&gt;...&lt;/svg&gt;</code></pre>
+								</figure>
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -351,37 +339,11 @@
 									Неконтентные svg задаются фоном через css, либо контентом через псевдоэлемент.
 								</p>
 							</div>
-							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
-								</p>
-							</div>
 						</li>
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Как отличить контентные svg от неконтентных: контентные меняются при взаимодействии:
-									меняется цвет, размер и т.д. Если меняется только прозрачность, смотреть по
-									ситуации.
-								</p>
-							</div>
-							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
+									Как отличить контентные svg от неконтентных: контентные меняются при взаимодействии: меняется цвет, размер и т.д. Если меняется только прозрачность, смотреть по ситуации.
 								</p>
 							</div>
 						</li>
@@ -393,42 +355,14 @@
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									В случае необходимости отключить работу элемента по умолчанию, необходимо
-									использовать
-									preventDefault.
-								</p>
-							</div>
-							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
+									В случае необходимости отключить работу элемента по умолчанию, необходимо использовать preventDefault.
 								</p>
 							</div>
 						</li>
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Используются одинарные кавычки. В случае вложенности разрешенно комбинировать
-									олдинарные
-									кавычки с двойными.
-								</p>
-							</div>
-							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
+									Используются одинарные кавычки. В случае вложенности разрешенно комбинировать олдинарные кавычки с двойными.
 								</p>
 							</div>
 						</li>
@@ -438,18 +372,6 @@
 									Для именования переменных и id для js используется стиль camelCase.
 								</p>
 							</div>
-							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
-								</p>
-							</div>
 						</li>
 						<li class="slide__wrapper">
 							<div class="slide__rules">
@@ -457,37 +379,11 @@
 									Классам, которые прописываются только для js, необходимо добавлять префикс js-
 								</p>
 							</div>
-							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
-								</p>
-							</div>
 						</li>
 						<li class="slide__wrapper">
 							<div class="slide__rules">
 								<p class="slide__text">
-									Для классов, которые срабатывают в случае отключенного js, необходимо приписывать
-									префикс
-									no-js-
-								</p>
-							</div>
-							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
+									Для классов, которые срабатывают в случае отключенного js, необходимо приписывать префикс no-js-
 								</p>
 							</div>
 						</li>
@@ -495,18 +391,6 @@
 							<div class="slide__rules">
 								<p class="slide__text">
 									Имена переменных должны явно говорить о том, для чего они.
-								</p>
-							</div>
-							<div class="slide__example">
-								<p class="slide__code slide__code--bad">
-									<code>
-
-									</code>
-								</p>
-								<p class="slide__code slide__code--good">
-									<code>
-
-									</code>
 								</p>
 							</div>
 						</li>
@@ -547,8 +431,7 @@
 								<p class="slide__code slide__code--good">
 									<b>Хорошо:</b>
 									<img src="" alt="Фон контрастный">
-									<img src=""
-										 alt="Картинка не загрузилась, но страховочный фон помог ничего не сломать">
+									<img src="" alt="Картинка не загрузилась, но страховочный фон помог ничего не сломать">
 								</p>
 							</div>
 						</li>
@@ -633,12 +516,14 @@
 							</div>
 							<div class="slide__example">
 								<figure class="slide__code slide__code--bad">
+									<b>Плохо:</b>
 									<pre><code>
 										&lt;img src="image/map.jpeg"&gt;
 										&lt;img src="image/map.jpeg" alt="карта"&gt;
 									</code></pre>
 								</figure>
 								<figure class="slide__code slide__code--good">
+									<b>Хорошо:</b>
 									<pre><code>
 										&lt;img src="image/map.jpeg" alt="Мы находимся по адресу: ..."&gt;
 									</code></pre>
