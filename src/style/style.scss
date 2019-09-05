@@ -175,12 +175,12 @@ button {
 		margin: 10px 0;
 		max-width: 300px;
 
-		& b,
-		& code {
+		b,
+		code {
 			display: block;
 		}
 
-		& code {
+		code {
 			margin-bottom: 10px;
 			white-space: pre-wrap;
 		}
@@ -221,6 +221,56 @@ button {
 
 	&__name {
 		display: block;
+	}
+}
+
+//=======ТЕКСТОВЫЕ ЭЛЕМЕНТЫ=========
+
+.slide__item {
+	padding: 24px;
+
+	h1 {
+		font-size: 2rem;
+		font-weight: 400;
+		color: $black;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+		font-weight: 400;
+		color: $black;
+	}
+
+	h3 {
+		font-size: 1.6rem;
+		font-weight: 400;
+		color: $black;
+	}
+
+	h4 {
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: $black;
+	}
+
+	.one-rem {
+		font-size: 1rem;
+		font-weight: 400;
+		color: $black;
+	}
+
+	.point8-rem {
+		font-size: 0.8rem;
+		font-weight: 400;
+		color: $black;
+	}
+
+	.slide__info {
+		font-size: 1.2rem;
+		margin-top: 10px;
+		span {
+			display: block;
+		}
 	}
 }
 
