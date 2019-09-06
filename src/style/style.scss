@@ -169,6 +169,19 @@ button {
 		display: block;
 		margin: 0 16px;
 		margin-bottom: 15px;
+
+		a {
+			color: $red;
+
+			&:hover,
+			&:focus {
+				color: $redOpacity;
+			}
+
+			&:active {
+				color: $black;
+			}
+		}
 	}
 
 	&__example {
