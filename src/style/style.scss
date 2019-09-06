@@ -94,6 +94,8 @@ button {
 }
 
 .menu {
+	position: sticky;
+	top: 10px;
 	flex-basis: 25%;
 	background-color: $grey;
 	padding: 24px;
@@ -163,11 +165,17 @@ button {
 		flex-grow: 1;
 	}
 
+	&__simple-text {
+		display: block;
+		margin: 0 16px;
+		margin-bottom: 15px;
+	}
+
 	&__example {
 		flex-basis: 40%;
 		width: 400px;
 		margin-left: 30px;
-		padding: 16px;
+		padding: 16px 0;
 		border: 1px solid $black;
 		border-radius: 5px;
 		background-color: $white;
@@ -176,11 +184,33 @@ button {
 	&__code {
 		//значение 300 примерное
 		margin: 10px 0;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 		//width: 400px;
 
+		&:last-child {
+			border-bottom-color: transparent;
+		}
+
 		b,
-		code {
+		code,
+		small {
 			display: block;
+			margin: 0 16px;
+		}
+
+		b {
+			margin-bottom: 15px;
+		}
+
+		img {
+			text-align: center;
+		}
+
+		small {
+			margin-top: 5px;
+			margin-bottom: 10px;
+			text-align: center;
+			opacity: 0.6;
 		}
 
 		code {

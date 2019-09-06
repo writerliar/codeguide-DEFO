@@ -16,7 +16,9 @@
 								</p>
 							</div>
 							<div class="slide__example">
-								<p class="slide__code slide__code--good">Плагин можно скачать с <a href="https://editorconfig.org/#download">официального сайта</a>.</p>
+								<p class="slide__code slide__code--good">
+									<span class="slide__simple-text">Плагин можно скачать с <a href="https://editorconfig.org/#download">официального сайта</a>.</span>
+								</p>
 							</div>
 						</li>
 						<li class="slide__wrapper">
@@ -257,7 +259,7 @@
 									<pre><code>background: green;</code></pre>
 								</figure>
 								<figure class="slide__code slide__code--good">
-									<b>Плохо:</b>
+									<b>Хорошо:</b>
 									<pre><code>background-color: green;</code></pre>
 								</figure>
 							</div>
@@ -308,11 +310,13 @@
 							<div class="slide__example">
 								<p class="slide__code slide__code--bad">
 									<b>Плохо:</b>
-									<img src="" alt="svg заинлайнена в разметку, что засоряет код">
+									<img src="img/svg-inline-bad.jpg" alt="пример плохого использования svg" width="406" height="209">
+									<small>svg заинлайнена в разметку, что засоряет код</small>
 								</p>
 								<p class="slide__code slide__code--good">
 									<b>Хорошо:</b>
-									<img src="" alt="svg берется из спрайта, код остается чистым, иконки подгружаются автоматически">
+									<img src="img/svg-inline-good.png" alt="пример хорошего использования svg" width="406" height="157">
+									<small>svg берется из спрайта, код остается чистым, иконки подгружаются автоматически</small>
 								</p>
 							</div>
 						</li>
@@ -425,13 +429,24 @@
 							<div class="slide__example">
 								<p class="slide__code slide__code--bad">
 									<b>Плохо:</b>
-									<img src="" alt="Задан неконтрастый фон: читать неудобно">
-									<img src="" alt="Картинка не загрузилвась и белый текст пропал на белом фоне">
+									<img src="img/no-contrast.png" alt="пример неконтрастного фона" width="308" height="90">
+									<small>Задан неконтрастый фон: читать неудобно</small>
 								</p>
 								<p class="slide__code slide__code--good">
 									<b>Хорошо:</b>
-									<img src="" alt="Фон контрастный">
-									<img src="" alt="Картинка не загрузилась, но страховочный фон помог ничего не сломать">
+									<img src="img/contrast.png" alt="Фон контрастный" width="265" height="93">
+									<small>Фон контрастный</small>
+								</p>
+								<p class="slide__code slide__code--bad">
+									<b>Плохо:</b>
+									<img src="img/background-image.png" alt="важность страховочного фона под картинкой" width="568" height="244">
+									<img src="img/background-image-bad.png" alt="важность страховочного фона под картинкой" width="566" height="168">
+									<small>Если не задать страховочный фон, то в случае незагруженной картинки текст потеряется</small>
+								</p>
+								<p class="slide__code slide__code--good">
+									<b>Хорошо:</b>
+									<img src="img/background-save.png" alt="важность страховочного фона в действии" width="571" height="239">
+									<small>Картинка не загрузилась, но страховочный фон помог ничего не потерять</small>
 								</p>
 							</div>
 						</li>
@@ -554,14 +569,13 @@
 							</div>
 							<div class="slide__example">
 								<p class="slide__code slide__code--good">
-									Кнопка, вызывающая попап, при выключенном js должна вести на подобную страницу.
+									<span class="slide__simple-text">Кнопка, вызывающая попап, при выключенном js должна вести на подобную страницу.</span>
 								</p>
 								<p class="slide__code slide__code--good">
-									Бургер-меню при выключенном js есть в потоке.
+									<span class="slide__simple-text">Бургер-меню при выключенном js есть в потоке.</span>
 								</p>
 								<p class="slide__code slide__code--good">
-									При выключенной интерактивной карте всегда есть страховочная картинка-подложка с
-									адресом.
+									<span class="slide__simple-text">При выключенной интерактивной карте всегда есть страховочная картинка-подложка с адресом.</span>
 								</p>
 							</div>
 						</li>
@@ -574,15 +588,8 @@
 							<div class="slide__example">
 								<p class="slide__code slide__code--bad">
 									<b>Плохо:</b>
-									<img src="" alt="Тест переполнения контентом не пройден: контент выпадает">
-									<img src="" alt="Тест переполнения блоками не пройден: блоки выпадают">
-								</p>
-								<p class="slide__code slide__code--good">
-									<b>Хорошо:</b>
-									<img src=""
-										 alt="Тест переполнения контентом пройден: контент растягивает родительский блок">
-									<img src=""
-										 alt="Тест переполнения блоками пройден: блоки переносятся, тем самым не ломая сайт">
+									<img src="img/content-bad.png" alt="пример непройденного теста на переполнение контентом" width="537" height="330">
+									<small>Тест переполнения контентом не пройден: контент выпадает</small>
 								</p>
 							</div>
 						</li>
