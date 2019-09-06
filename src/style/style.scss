@@ -228,16 +228,39 @@ button {
 	}
 }
 
-//======ЦВЕТА========
+//=====ОБЩИЕ СТИЛИ РАЗМЕТКИ ДЛЯ БИБЛИОТЕК======
 
-.colors {
+.colors,
+.fonts,
+.text,
+.buttons,
+.links {
 	display: flex;
 	flex-wrap: wrap;
 
-	&__item {
-		flex-basis: 20%;
-		margin-bottom: 24px;
+	&__title {
+		font-size: 1.8rem;
+		flex-basis: 100%;
 	}
+
+	&__section {
+		background-color: $grey;
+		padding: 24px;
+		margin: 0 0 24px 0;
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+
+	&__item {
+		flex-basis: 25%;
+		padding: 24px;
+	}
+}
+
+//======ЦВЕТА========
+
+.colors {
 
 	&__bg {
 		height: 70px;
@@ -259,20 +282,10 @@ button {
 
 //=======ТЕКСТОВЫЕ ЭЛЕМЕНТЫ=========
 
-.fonts {
-
-	&__title {
-		font-size: 1.8rem;
-	}
-
-	&__section {
-		background-color: $grey;
-		padding: 24px;
-		margin: 0 0 24px 0;
-	}
+.fonts,
+.text {
 
 	&__item {
-		padding: 24px;
 
 		h1 {
 			font-size: 2rem;
@@ -325,24 +338,6 @@ button {
 
 .buttons,
 .links {
-
-	&__title {
-		font-size: 1.8rem;
-		flex-basis: 100%;
-	}
-
-	&__section {
-		background-color: $grey;
-		padding: 24px;
-		margin: 0 0 24px 0;
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	&__item {
-		padding: 24px;
-		flex-basis: 25%;
-	}
 
 	.red-btn {
 		display: inline-block;
