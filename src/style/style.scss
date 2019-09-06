@@ -229,51 +229,74 @@ button {
 
 //=======ТЕКСТОВЫЕ ЭЛЕМЕНТЫ=========
 
-.slide__item {
-	padding: 24px;
+.fonts {
 
-	h1 {
-		font-size: 2rem;
-		font-weight: 400;
-		color: $black;
-	}
-
-	h2 {
+	&__title {
 		font-size: 1.8rem;
-		font-weight: 400;
-		color: $black;
 	}
 
-	h3 {
-		font-size: 1.6rem;
-		font-weight: 400;
-		color: $black;
+	&__section {
+		background-color: $grey;
+		padding: 24px;
+		margin: 0 0 24px 0;
 	}
 
-	h4 {
-		font-size: 1.4rem;
-		font-weight: 400;
-		color: $black;
+	&__item {
+		padding: 24px;
+
+		h1 {
+			font-size: 2rem;
+			font-weight: 400;
+			color: $black;
+		}
+
+		h2 {
+			font-size: 1.8rem;
+			font-weight: 400;
+			color: $black;
+		}
+
+		h3 {
+			font-size: 1.6rem;
+			font-weight: 400;
+			color: $black;
+		}
+
+		h4 {
+			font-size: 1.4rem;
+			font-weight: 400;
+			color: $black;
+		}
+
+		.one-rem {
+			font-size: 1rem;
+			font-weight: 400;
+			color: $black;
+		}
+
+		.point8-rem {
+			font-size: 0.8rem;
+			font-weight: 400;
+			color: $black;
+		}
 	}
 
-	.one-rem {
-		font-size: 1rem;
-		font-weight: 400;
-		color: $black;
-	}
-
-	.point8-rem {
-		font-size: 0.8rem;
-		font-weight: 400;
-		color: $black;
-	}
-
-	.slide__info {
+	&__info {
 		font-size: 1.2rem;
 		margin-top: 10px;
+
 		span {
 			display: block;
 		}
+	}
+}
+
+//==========КНОПКИ===============
+
+.buttons {
+
+	&__title {
+		font-size: 1.8rem;
 	}
 }
 
