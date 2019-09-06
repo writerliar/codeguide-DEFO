@@ -336,10 +336,80 @@ button {
 
 //==========КНОПКИ===============
 
-.buttons {
+.buttons,
+.links {
 
 	&__title {
 		font-size: 1.8rem;
+		flex-basis: 100%;
+	}
+
+	&__section {
+		background-color: $grey;
+		padding: 24px;
+		margin: 0 0 24px 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		padding: 24px;
+		flex-basis: 25%;
+	}
+
+	.red-btn {
+		display: inline-block;
+		background-color: $white;
+		border: 1px solid $red;
+		font-weight: 400;
+		padding: 15px;
+		color: $red;
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: $red;
+			color: $white;
+		}
+	}
+
+	.black-btn {
+		display: inline-block;
+		background-color: $white;
+		border: 1px solid $black;
+		font-weight: 400;
+		padding: 15px;
+		color: $black;
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: $black;
+			color: $white;
+		}
+	}
+
+	.blue-link {
+		color: $blue;
+		font-weight: 400;
+		border-bottom: 1px dotted $blue;
+	}
+
+	.red-link {
+		color: $red;
+		font-weight: 400;
+		border-bottom: 1px solid $red;
+	}
+
+	&__info {
+		margin-top: 20px;
+
+		span {
+			display: block;
+		}
+
+		.hover-style {
+			font-weight: 600;
+			margin-top: 10px;
+		}
 	}
 }
 
